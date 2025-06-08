@@ -1,0 +1,24 @@
+
+
+- package is used to organize a set of related classes 
+
+=> import java_package.class_name; // to import a class 
+- classes in same package are not needed to be imported and can be used directly instead 
+
+- access modifiers 
+    - default
+        - accessible to classes within a package 
+    - private 
+        - private data members and methods are accessible only to class that defines it 
+        - top level classes are not allowed to be private 
+    - protected 
+        - accessible to classes in same package
+        - accessible to sub classes in different package 
+    - public 
+        - accessible to all outside entities 
+
+- abstract class ?
+
+
+
+

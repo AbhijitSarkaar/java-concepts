@@ -1,0 +1,27 @@
+
+
+- it is an abstract type 
+- it defines the scope of behaviors of classes 
+- it helps in loose coupling
+    - classes depend on interfaces for behaviors
+    - implementations are done by classes themselves
+- it can have default methods to specify a functionality 
+
+// interface 
+
+public interface Vehicle {
+	void speedup(int a);	
+    default void showspeed() {
+        System.out.println("speed");
+    }
+}
+
+// class 
+
+public class Car implements Vehicle {
+
+	public void speedup(int a) {
+		System.out.println(a);
+	}
+	
+}

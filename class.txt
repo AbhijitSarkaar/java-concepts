@@ -1,0 +1,45 @@
+
+- basics 
+    - attributes
+    - methods 
+    - private and public methods and attributes
+    - private methods and attributes can only be used inside a class 
+
+
+// example 
+public class Dog {
+    int age;
+    String name;
+    protected static int count = 0; // static variable 
+
+    public Dog(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void speak() {
+		System.out.println("I am " + this.name + " and I am " + this.age + " years old");
+	}
+
+    public void getAge() {
+		System.out.println(this.age);
+	}
+
+}
+
+=> Dog tim = new Dog("tim", 12);
+=> tim.speak()
+
+
+// inheritence 
+public class Cat extends Dog {
+	
+	public Cat() {
+		super("tim", 12); // calling parent class constructor 
+	}
+
+}
+
+=> Cat c = new Cat();
+c.speak(); // meow 
+c.getAge(); // 12
