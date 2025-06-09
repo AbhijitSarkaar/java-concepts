@@ -1,0 +1,30 @@
+
+
+- class 
+    - it is a blueprint of objects
+    - defines attributes and behaviors of objects 
+
+- object 
+    - 'new' keyword is used to initialise objects 
+    - objects are instances of a class 
+
+- setters and getters 
+    - setProperty
+    - getPropreety
+
+- access levels 
+    - class 
+    - package 
+    - subclass 
+    - world 
+
+- access modifiers 
+    - public ( class, package, subclass, world )
+    - protected ( class, package, subclass )
+    - default ( class, package )
+    - private ( class )
+
+- access modifiers helps in ensuring security and controling access to systems 
+- top level classes can only be public or default 
+
+

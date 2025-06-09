@@ -1,0 +1,19 @@
+
+
+- package is used to organize a set of related classes 
+
+=> import java_package.class_name; // to import a class
+
+- main() class is starting point of execution of java programs 
+    - JVM starts execution by looking for a main method 
+    - public static void main(String[] args) {}
+        - 'public' access modifier for JVM to access it outside the class 
+        - 'static' for JVM to run the class without instantiating the class
+        - 'void' for main method does not return anything 
+        - 'main' for identifier that JVM looks for when executing a program 
+
+
+
+
+
+
