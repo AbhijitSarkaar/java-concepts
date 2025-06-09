@@ -1,0 +1,57 @@
+
+
+- inheritence provides a way for classes to share similar properties and behaviors
+- it uses 'Is a' relationship
+    - e.g Car Is a Vehicle 
+- inherited class has the responsibility to initialise the base class 
+    - it is done by taking the required properties of base class during initialisation 
+
+- 'super' keyword is used to initialise base class in sub classes 
+
+// example 
+
+// Main.java
+package inheritence;
+
+public class Main {
+	public static void main(String[] args) {
+		MountainBike bike = new MountainBike(10, 20);
+		bike.getInfo();
+	}
+}
+
+
+// Bicycle.java 
+package inheritence;
+
+public class Bicycle {
+	
+	protected int speed;
+	
+	public Bicycle(int speed) {	
+		this.speed = speed;
+	}
+	
+	public void setSpeed(int newSpeed) {
+		this.speed = newSpeed;
+	}
+
+}
+
+// MountainBike.java 
+package inheritence;
+
+public class MountainBike extends Bicycle {
+	
+	private int height; 
+	
+	public MountainBike(int height, int speed) {
+		super(speed);
+		this.height = height;
+	}
+	
+	public void getInfo() {
+		System.out.println("height: " + this.height + " speed: " + this.speed);
+	}
+
+}
