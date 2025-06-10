@@ -1,0 +1,3 @@
+
+- dependency inversion principle 
+    - classes should depend on abstractions e.g interfaces 
