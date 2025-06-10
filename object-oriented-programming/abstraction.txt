@@ -1,0 +1,38 @@
+
+
+- abstraction is about hiding implementation details of a class and only exposing relevant information 
+- 'abstract' keyword is used to define abstract class and methods 
+- abstract classes can be extended by other normal and abstract classes 
+- implementations of abstract methods are done in sub classes extended from abstract class 
+- abstract classes may have constructor and the constructor can only be called by java during instantiation 
+of child classes 
+
+//example 
+
+// GraphicObject.java
+package abstraction;
+
+public abstract class GraphicObject {
+	abstract void draw();
+}
+
+// Circle.java
+package abstraction;
+
+public class Circle extends GraphicObject {
+	public void draw() {
+		System.out.println("Circle draw");
+	}
+}
+
+// Main.java
+package abstraction;
+
+public class Main {
+	public static void main(String[] args) {
+		GraphicObject c = new Circle();
+		c.draw();
+	}
+}
+
+

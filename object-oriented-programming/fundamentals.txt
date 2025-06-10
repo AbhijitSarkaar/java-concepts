@@ -3,6 +3,7 @@
 - class 
     - it is a blueprint of objects
     - defines attributes and behaviors of objects 
+    - default contructor is provided in case a custom constructor is not provided 
 
 - object 
     - 'new' keyword is used to initialise objects 

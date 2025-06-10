@@ -5,8 +5,8 @@
     - e.g Car Is a Vehicle 
 - inherited class has the responsibility to initialise the base class 
     - it is done by taking the required properties of base class during initialisation 
-
 - 'super' keyword is used to initialise base class in sub classes 
+- multiple inheritence is not possible with a sub class inherit from multiple classes  
 
 // example 
 

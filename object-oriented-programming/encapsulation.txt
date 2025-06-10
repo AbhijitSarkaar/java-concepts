@@ -1,0 +1,6 @@
+
+
+- encapsulation is used to provide access to a class from outside world
+    
+    - getter and setter methods with appropriate visibility 
+
