@@ -1,0 +1,103 @@
+
+- single responsibility principle
+    - a class should have only 1 reason to change 
+    - a class should be created to solve one single problem 
+
+
+// exmaple 
+// InvoiceTotal, InvoicePrint each handles one single responsibility
+
+// Marker.java 
+package single_responsibility_principle;
+
+public class InvoicePrint {
+	
+	Invoice invoice;
+	
+	public InvoicePrint(Invoice invoice) {
+		this.invoice = invoice;
+	}
+	
+	public void printData() {
+		System.out.println(this.invoice.getQuantity());
+	}
+
+}
+
+// Invoice.java
+package single_responsibility_principle;
+
+public class Invoice {
+	
+	private Marker marker;
+	private int quantity;
+	
+	public Invoice(Marker m, int q) {
+		this.marker = m;
+		this.quantity = q;
+	}
+	
+	public int getQuantity() {
+		return this.quantity;
+	}
+	
+	public Marker getMarker() {
+		return this.marker;
+	}
+
+}
+
+// InvoiceTotal.java 
+package single_responsibility_principle;
+
+public class InvoiceTotal {
+	Invoice invoice;
+	
+	public InvoiceTotal(Invoice invoice) {
+		this.invoice = invoice;
+	}
+	
+	public int calculateTotal() {
+		int quantity = this.invoice.getQuantity();
+		Marker marker = this.invoice.getMarker();
+		
+		return quantity * marker.getPrice();
+	}
+}
+
+// InvoicePrint.java 
+package single_responsibility_principle;
+
+public class InvoicePrint {
+	
+	Invoice invoice;
+	
+	public InvoicePrint(Invoice invoice) {
+		this.invoice = invoice;
+	}
+	
+	public void printData() {
+		System.out.println(this.invoice.getQuantity());
+	}
+
+}
+
+// Main.java 
+package single_responsibility_principle;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Marker new_marker = new Marker(20);
+		Invoice marker_invoice = new Invoice(new_marker, 10);
+		
+		InvoiceTotal total_invoice = new InvoiceTotal(marker_invoice);
+		int total = total_invoice.calculateTotal();
+		System.out.println(total);
+		
+		InvoicePrint invoice_print = new InvoicePrint(marker_invoice);
+		invoice_print.printData();
+		
+	}
+}
+
