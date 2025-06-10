@@ -1,0 +1,43 @@
+
+
+- interfaces define a contract according to which a set of classes function 
+- methods can only be declared in interfaces and can not be defined 
+- variables can only be 'public static final' 
+- interfaces can not be instantiated. they can only be extended by other classes
+
+// example 
+
+// Bicycle.java
+package interface_demo;
+
+interface Bicycle {
+	public static final int wheels = 2;
+	void speedUp();
+	void applyBrake();
+}
+
+
+// MountainBike.java
+package interface_demo;
+
+public class MountainBike implements Bicycle {
+	public void speedUp() {
+		System.out.println("Speed up");
+	}
+	public void applyBrake() {
+		System.out.println("Apply brake");
+	}
+}
+
+
+// Main.java 
+package interface_demo;
+
+public class Main {
+	public static void main(String[] args) {
+		MountainBike m = new MountainBike();
+		m.applyBrake();
+		m.speedUp();
+		System.out.println(MountainBike.wheels);	
+	}
+}

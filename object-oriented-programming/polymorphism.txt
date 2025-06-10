@@ -1,0 +1,7 @@
+
+
+- ability of an object to perform a task in multiple method 
+- it allows same name for methods across multiple base and sub classes 
+- method overloading 
+    - two methods have same name and method is selected based on their parameters 
+- 'super' keyword can be used to reference base class 
