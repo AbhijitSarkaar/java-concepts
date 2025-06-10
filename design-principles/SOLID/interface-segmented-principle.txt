@@ -1,0 +1,60 @@
+
+
+- interface segmented principle
+    - interface to be defined in such a way that classes to not implement the methods they do not need
+    - interfaces to be minimal and specific 
+    - interface to cover a scope of functionalities that solves a specific problem 
+
+// example 
+// functionalities are specific and scoped and classes that implements the interface are using all methods defined
+
+// WaiterInterface.java 
+package interface_segmentated_principle;
+
+public interface WaiterInterface {
+	public void serveCustomers();
+}
+
+// ChefInterface.java
+package interface_segmentated_principle;
+
+public interface ChefInterface {
+	public void cookFood();
+}
+
+// Waiter.java
+package interface_segmentated_principle;
+
+public class Waiter implements WaiterInterface {
+	public void serveCustomers() {
+		System.out.println("serve food to customers");
+	}
+}
+
+// Chef.java 
+package interface_segmentated_principle;
+
+public class Chef implements ChefInterface {
+	public void cookFood() {
+		System.out.println("cook food for customers");
+	}
+}
+
+// Main.java 
+package interface_segmentated_principle;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Waiter w = new Waiter();
+		w.serveCustomers();
+		
+		Chef c = new Chef();
+		c.cookFood();
+		
+	}
+}
+
+
+
+
