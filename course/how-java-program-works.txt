@@ -1,0 +1,38 @@
+
+
+notes 
+
+- java program
+    - java program is with extension .java
+    - ‘javac’ is java compiler. used to compile java programs into bytecodes
+        - javac Student.java
+        - .class files are bytecodes from compiling from javac
+    - program starts with main() method. jvm looks for main() in bytecode to start a program
+    - 1 file contains 1 public class
+    - filename should be same as class name 
+
+- JVM
+    - jvm can be used to run bytecodes
+        - java Student.class 
+    - jvms are platform dependent. jvm implementations depend on platforms that tuns jvm e.g linux, mac 
+    - jvm has jit compiler ( just in time )
+
+- JRE
+    - jvm with class libraries
+    - jvm uses class libraries for getting source code for classes to convert into bytecodes
+    - jre can only consume java programs. it can not compile. it can run java programs 
+
+- JDK
+    - to write and compile java programs, jdk is needed 
+    - java compiler understands java syntax and creates bytecodes by compiling java programs
+    - jdk 21 version is installed to run java from oracle website in form of dmg
+    - java is installed using jdk ( java development kit )
+
+- JVM, JRE, JDK are platform dependent. java program and bytecode is platform independent
+
+
+eclipse 
+
+    - eclipse import existing maven project to open java projects 
+    - package explorer can be opened using search icon to right top 
+

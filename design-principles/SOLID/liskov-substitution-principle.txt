@@ -1,7 +1,0 @@
-
-
-- liskov substitution principle
-    - in case of class B is a subclass of class A, then object of class A 
-    should be able to be replaced by object of class B without any breaking changes 
-    - subclass should extend capabilities of base class and not narrow it down 
-
